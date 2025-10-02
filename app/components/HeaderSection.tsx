@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Form from "./Form";
 
 export default function HeaderSection() {
   return (
@@ -9,6 +10,7 @@ export default function HeaderSection() {
     >
       <div className="max-w-[1200px] m-auto">
         <Nav />
+        <Form />
       </div>
     </div>
   );
