@@ -51,8 +51,8 @@ export default function Form() {
                 />
               </div>
             </div>
-            <div className="flex flex-cols">
-              <button className="block w-full bg-[#24FFB2] text-white py-4 px-2 rounded-md font-bold mt-4">
+            <div className="flex flex-col">
+              <button className="block w-full bg-[#24FFB2] text-[#1a1a1a] py-4 px-2 rounded-md font-bold mt-4">
                 Voir les véhicules
               </button>
             </div>
