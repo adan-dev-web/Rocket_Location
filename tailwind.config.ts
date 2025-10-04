@@ -1,19 +1,29 @@
-// import type { Config } from "tailwindcss";
+/* filepath: /home/wac7/Projets_perso/sixt/Rocket_Location/tailwind.config.ts */
+import type { Config } from 'tailwindcss';
 
-// const config: Config = {
-//   content: [
-//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-//   ],
-//   theme: {
-//     extend: {
-//       fontFamily: {
-//         sans: ["var(--font-geist-sans)"],
-//         mono: ["var(--font-geist-mono)"],
-//       },
-//     },
-//   },
-//   plugins: [],
-// };
-// export default config;
+const config: Config & {
+  daisyui?: {
+    themes?: string[] | boolean;
+    base?: boolean;
+    styled?: boolean;
+    utils?: boolean;
+  };
+} = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: false,
+    base: false,
+    styled: true,
+    utils: true,
+  },
+};
+
+export default config;
