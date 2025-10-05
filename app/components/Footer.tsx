@@ -1,3 +1,4 @@
+/* filepath: /home/wac7/Projets_perso/sixt/Rocket_Location/app/components/Footer.tsx */
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "next/image";
@@ -9,21 +10,17 @@ export default function Footer() {
         {/* Section principale */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-center">
           {/* Logo à gauche */}
-          <div className="flex items-center justify-center sm:justify-start gap-3 hover:scale-105 transition-transform duration-300 ">
+          <div className="flex items-center justify-center sm:justify-start gap-3 select-none">
             <Image
               src="/images/RL_logo.png"
               alt="Rocket Location Logo"
               width={60}
               height={60}
-              className="w-10 h-10 sm:w-12 sm:h-12 hover:rotate-12 transition-transform duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12"
             />
             <div className="text-xl sm:text-2xl font-bold">
-              <span className="text-[#24FFB2] hover:text-[#1fffa8] transition-colors duration-300">
-                ROCKET
-              </span>
-              <span className="text-white hover:text-gray-300 transition-colors duration-300">
-                LOCATION
-              </span>
+              <span className="text-[#24FFB2]">ROCKET</span>
+              <span className="text-white">LOCATION</span>
             </div>
           </div>
 
