@@ -36,7 +36,7 @@ export default function Form() {
               <input
                 placeholder="Aéroport, Ville ou Adresse"
                 type="search"
-                className="outline-none w-full h-full pl-8 text-[#1a1a1a] focus:placeholder-[#24FFB2] transition-colors duration-300"
+                className="outline-none w-full h-full pl-8 text-[#1a1a1a] transition-colors duration-300"
               />
             </div>
             <div className="hidden md:flex items-center gap-3 text-[#1a1a1a] hover:text-[#24FFB2] transition-colors duration-300 cursor-pointer">
