@@ -7,6 +7,7 @@ import GalerieSection from "./components/GalerieSection";
 import { getCarList } from "@/Services";
 import { useState, useEffect } from "react";
 import FilterSection from "./components/FilterSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [carList, setCarList] = useState<any>([]);
@@ -47,6 +48,7 @@ export default function Home() {
       />
 
       <GalerieSection carList={carList} />
+      <Footer />
     </>
   );
 }

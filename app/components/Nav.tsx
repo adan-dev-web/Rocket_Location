@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../public/images/sixt-logo.png";
+import Logo from "../../public/images/RL_logo.png";
 import Image from "next/image";
 import { IoMenu } from "react-icons/io5";
 import { TbWorld } from "react-icons/tb";
@@ -16,7 +16,13 @@ export default function Nav() {
     <div className="flex justify-between items-center">
       <div className="flex items-center gap-3">
         <IoMenu className="text-2xl text-white cursor-pointer hover:scale-125 transition-all" />
-        <Image src={Logo} alt="Logo" width={70} className="cursor-pointer" />
+        <Image
+          src={Logo}
+          alt="Logo"
+          width={50}
+          height={50}
+          className="cursor-pointer"
+        />
       </div>
 
       <ul className="flex items-center gap-4">
